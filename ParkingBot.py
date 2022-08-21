@@ -32,7 +32,7 @@ driver.find_element(By.ID,"confirmProperty").click()
 propertyList = driver.find_elements(By.CSS_SELECTOR, "div[class^='property radio']")  # Create list of all property results
 for i in range(len(propertyList)):
     proptext = propertyList[i].text
-    if proptext.find(property) != -1:
+    if proptext.find(property) >=0:
         wait = WebDriverWait(driver, 10)
         radio = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[class^='property']")))
         time.sleep(.5)
