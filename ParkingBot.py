@@ -11,10 +11,10 @@ starttime = time.time() # to track how much time the code takes
 driver = wb.Firefox() # initialize driver
 
 # USER DATA
-property = "Marquis at Great Hills" # Must be a unique identifier for your property or full property name
+property = "PROPERTYNAME" # Must be a unique identifier for your property or full property name
 aptnum = "APARTMENTNUMBER"
-make = "Chevy"
-model = "Cruze"
+make = "CARMAKE"
+model = "CARMODEL"
 lp = "LICENCEPLATENUMBER"
 ConfirmLP = lp
 email = "EMAIL@gmail.com"
