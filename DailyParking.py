@@ -5,10 +5,18 @@ from selenium import webdriver as wb
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver import FirefoxOptions
 
 starttime = time.time() # to track how much time the code takes
 
-driver = wb.Firefox() # initialize driver
+LinuxCheck = False # Manually change if running in Linux, can ignore in Windows 
+if LinuxCheck == True: 
+    opts = FirefoxOptions()
+    opts.add_argument("--headless")
+    driver = wb.Firefox(options=opts)
+else:
+    driver = wb.Firefox() # initialize driver
+
 
 # USER DATA
 property = "PROPERTYNAME" # Must be a unique identifier for your property or full property name
