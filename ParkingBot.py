@@ -15,7 +15,7 @@ property = "PROPERTYNAME" # Must be a unique identifier for your property or ful
 aptnum = "APARTMENTNUMBER"
 make = "CARMAKE"
 model = "CARMODEL"
-lp = "LICENCEPLATENUMBER"
+lp = "LICENSEPLATENUMBER"
 ConfirmLP = lp
 email = "EMAIL@gmail.com"
 
